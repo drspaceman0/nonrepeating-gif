@@ -7,19 +7,18 @@
 }
   
 .MuiSlider-thumb{
-    color: #14b8a6;
+    color: #0f766e;
     border: 2px solid black;
   }
   .MuiSlider-rail{
-    color:#99f6e4; 
+    color: #5eead4; 
   }
-  .MuiSlider-track{
-    color: #14b8a6; 
-
+  .MuiSlider-track{ 
+    color: #14b8a6;  
   }
 
   .MuiSlider-valueLabel { 
-    background-color: #14b8a6!important; 
+    background-color: #0f766e!important; 
     border: 2px solid black;
 
   }
