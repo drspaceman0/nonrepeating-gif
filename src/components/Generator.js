@@ -1,13 +1,10 @@
 import React from 'react';
 import GIF from "gif.js";
 import gifFrames from 'gif-frames';
-import workerScript from "./gifWorkerScript";
- 
+import workerScript from "./gifWorkerScript"; 
 import GifEditor from './GifEditor';
 import DownloadGifModal from './DownloadGifModal';
-
-
-
+ 
 function showMessageForHire(): void {
     console.log("***** ");
     console.log("NEED A WEB DEVELOPER? ");

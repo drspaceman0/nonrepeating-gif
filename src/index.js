@@ -14,11 +14,7 @@ ReactDOM.render(
         <Generator />
         <Info />
         <footer className="h-10 static my-4 w-full text-center text-white font-semibold  ">
-            © 2022 <a href="https://www.ericmarshblog.com/" className="cursor-pointer hover:font-bold hover:text-gray-400">EricMarshBlog.com</a><br></br>
-
-
-            
-
+            © 2022 <a href="https://www.ericmarshblog.com/" className="cursor-pointer hover:font-bold hover:text-gray-400">EricMarshBlog.com</a><br></br> 
             Need a web developer? <a href="mailto:eric@ericmarshblog.com" className="no-underline hover:underline hover:text-teal-900 text-gray-400 font-bold">Contact me</a>
         </footer>
       </div>

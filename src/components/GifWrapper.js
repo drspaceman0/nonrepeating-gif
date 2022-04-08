@@ -1,9 +1,7 @@
 import React from 'react';
 import { useIsVisible } from 'react-is-visible'
 
-export default function GifWrapper({imgSrc, alt="", refresh=false}) {
-    
- 
+export default function GifWrapper({imgSrc, alt="", refresh=false}) { 
     const imgRef = React.useRef();
     const isVisible = useIsVisible(imgRef)
     if(isVisible) {

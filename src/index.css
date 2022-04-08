@@ -1,11 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.bg-dark-blue-magenta {
-    background-color: #1b1a21;
-}
-  
+ 
 .MuiSlider-thumb{
     color: #0f766e;
     border: 2px solid black;
