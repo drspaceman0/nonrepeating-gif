@@ -96,7 +96,7 @@ function Generator() {
         if (!importedGif) return;
 
         gifFrames({ url: importedGif, frames: 'all', outputType: 'canvas' }).then(function (frameData) { 
-            let fSpeed = frameData[0].frameInfo.delay; 
+            let fSpeed = frameData[0].frameInfo.delay * 10;  
             let fArray = frameData.map((f) => f.getImage()); 
             setFrameSpeed(fSpeed);
             setFrames(fArray);
@@ -105,6 +105,7 @@ function Generator() {
 
 
     const startGenerateGif = (fr, fs, tm) => { 
+        console.log(`Encoding ${tm ? fr.length+100 : fr.length} frames with a frame delay of ${fs}. Twitter mode is ${tm ? "ENABLED" : "DISABLED"}`);
         generateGif(fr, fs, tm);
         setIsGenerating(true);
     }  

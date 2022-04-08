@@ -12,7 +12,7 @@ export default function GifEditor({ frames, frameSpeed, generateCallback, cancel
 
     React.useEffect(() => {
         setFrameRange([0, frames.length - 1])
-    }, []);
+    }, [frames]);
 
     const handleFrameChange = (e, newRange, handle) => {
         if (!newRange || (newRange[0] === frameRange[0] && newRange[1] === frameRange[1]) || newRange[0] >= newRange[1])
@@ -33,7 +33,7 @@ export default function GifEditor({ frames, frameSpeed, generateCallback, cancel
         return frames.slice(frameRange[0], frameRange[1] + 1);
     }
 
-    const triggerDownload = (fr, fs, tm) => {
+    const triggerDownload = (fr, fs, tm) => { 
         generateCallback(fr, fs, tm);
     }
  

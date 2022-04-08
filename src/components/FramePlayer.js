@@ -25,7 +25,7 @@ export default function FramePlayer({ frames, frameSpeed }) {
                 }
                 context.drawImage(frames[index], 0, 0);
                 index = (index === frames.length - 1 ? 0 : index + 1);
-            }, frameSpeed * 10);
+            }, frameSpeed);
         }
 
         return () => window.clearInterval(interval);
