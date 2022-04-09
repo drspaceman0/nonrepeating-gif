@@ -1,4 +1,5 @@
-import { useState, useRef, Fragment } from 'react'
+import { useState, useRef, Fragment } from 'react' 
+import GifWrapper from './GifWrapper'; 
 import { Dialog, Transition } from '@headlessui/react'
 
 const exportFileName = "nonlooping.gif";
@@ -44,7 +45,7 @@ export default function DownloadGifModal({ gif, onCloseCallback }) {
                                         </Dialog.Title>
                                     </div> 
                                     <div className="bg-gray-500 shadow-xl mt-3 w-full h-full flex justify-center flex-col border-black border-2">
-                                        <img src={gif} alt="Your Non-Looping Gif" />
+                                        <GifWrapper imgSrc={gif} alt="Your Non-Looping Gif" /> 
                                     </div> 
                                 </div>
                             </div>
